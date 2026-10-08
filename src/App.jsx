@@ -1,25 +1,52 @@
+import { useState } from "react";
+import vendors from "./data/vendors";
 import Header from "./components/Header";
 import VendorCard from "./components/VendorCard";
-import MenuItemCard from "./components/MenuItemCard";
+import MenuList from "./components/MenuList";
+import SpecialBanner from "./components/SpecialBanner";
 import Footer from "./components/Footer";
 
 function App() {
+  const [selectedVendorId, setSelectedVendorId] = useState(vendors[0].id);
+  const [cart, setCart] = useState([]);
+
+  const selectedVendor = vendors.find((v) => v.id === selectedVendorId);
+
+  const handleAddToCart = (item) => {
+    setCart((prevCart) => [...prevCart, item]);
+  };
+
   return (
     <>
-      <Header />
+      <Header cartCount={cart.length} />
       <main className="container">
         <section>
-          <h2>Today's vendors</h2>
+          <h2>Choose a vendor</h2>
           <div className="grid">
-            <VendorCard />
+            {vendors.map((vendor) => (
+              <VendorCard
+                key={vendor.id}
+                vendor={vendor}
+                isSelected={vendor.id === selectedVendorId}
+                onSelect={setSelectedVendorId}
+              />
+            ))}
           </div>
         </section>
 
-        <section>
-          <h2>Popular items</h2>
-          <div className="grid">
-            <MenuItemCard />
-          </div>
+        <section style={{ marginTop: "30px" }}>
+          <h2>Menu: {selectedVendor ? selectedVendor.name : ""}</h2>
+          {selectedVendor && (
+            <SpecialBanner
+              specialItem={selectedVendor.menu.find(
+                (item) => item.price < 5 && item.available,
+              )}
+            />
+          )}
+          <MenuList
+            items={selectedVendor ? selectedVendor.menu : []}
+            onAdd={handleAddToCart}
+          />
         </section>
       </main>
       <Footer />
