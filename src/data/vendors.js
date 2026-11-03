@@ -106,14 +106,14 @@ const vendors = [
     ],
   },
   {
-    id: "2413645-kpmt",
+    id: "2410589-KPMT",
     name: "Kedai Makan Pantai Timur",
     location: "Mahallah Albuquerque, Block C",
     openHours: "7:00 am - 10:00 pm",
     isOpen: true,
     menu: [
       {
-        id: "2413645-kpmt-1",
+        id: "2410589-ikan patin",
         name: "Ikan Patin Masak Lemak",
         description: "Ikan Sangkar",
         price: 8.5,
@@ -121,7 +121,7 @@ const vendors = [
         available: true,
       },
       {
-        id: "2413645-kpmt-2",
+        id: "2410589-fragrant rice",
         name: "Fragrant Rice",
         description: "White Rice",
         price: 2.0,
@@ -129,7 +129,7 @@ const vendors = [
         available: true,
       },
       {
-        id: "2413645-kpmt-3",
+        id: "2410589-sky juice",
         name: "Sky Juice",
         description: "Coway",
         price: 0.5,
@@ -137,7 +137,7 @@ const vendors = [
         available: true,
       },
       {
-        id: "2413645-kpmt-4",
+        id: "2410589-coconut shake",
         name: "Coconut Shake",
         description: "Fresh Coconut, blended everyday",
         price: 4.5,
@@ -147,14 +147,14 @@ const vendors = [
     ],
   },
   {
-    id: "2413645-faizul",
+    id: "2418793-Faizul-Cafe",
     name: "Faizul Cafe",
     location: "Mahallah Siddiq, Block A",
     openHours: "8:00 am - 11:00 pm",
     isOpen: true,
     menu: [
       {
-        id: "2413645-faizul-1",
+        id: "2418793-m1",
         name: "Nasi Goreng Kampung",
         description: "Fried rice with anchovies and vegetables.",
         price: 5.0,
@@ -162,7 +162,7 @@ const vendors = [
         available: true,
       },
       {
-        id: "2413645-faizul-2",
+        id: "2418793-m2",
         name: "Nasi Goreng Cina",
         description: "Chinese-style fried rice with egg.",
         price: 4.5,
@@ -170,7 +170,7 @@ const vendors = [
         available: true,
       },
       {
-        id: "2413645-faizul-3",
+        id: "2418793-m3",
         name: "Nasi Goreng Pattaya",
         description: "Fried rice wrapped in an egg omelette.",
         price: 6.5,
@@ -178,7 +178,7 @@ const vendors = [
         available: true,
       },
       {
-        id: "2413645-faizul-4",
+        id: "2418793-m4",
         name: "Nasi Goreng USA",
         description: "Fried rice served with meat and egg.",
         price: 8.0,
@@ -186,7 +186,7 @@ const vendors = [
         available: true,
       },
       {
-        id: "2413645-faizul-5",
+        id: "2418793-m5",
         name: "Nasi Goreng Kerabu",
         description: "Aromatic fried rice with fresh herbs.",
         price: 6.0,
@@ -194,7 +194,7 @@ const vendors = [
         available: true,
       },
       {
-        id: "2413645-faizul-6",
+        id: "2418793-m6",
         name: "Nasi Kerabu",
         description: "Blue rice served with herbs and sides.",
         price: 6.0,
@@ -202,7 +202,7 @@ const vendors = [
         available: true,
       },
       {
-        id: "2413645-faizul-7",
+        id: "2418793-m7",
         name: "Nasi Dagang",
         description: "Rice served with rich fish curry.",
         price: 6.0,
@@ -210,7 +210,7 @@ const vendors = [
         available: true,
       },
       {
-        id: "2413645-faizul-8",
+        id: "2418793-m8",
         name: "Nasi Goreng Chicken Chop",
         description: "Fried rice with crispy chicken chop.",
         price: 10.67,
@@ -218,7 +218,7 @@ const vendors = [
         available: true,
       },
       {
-        id: "2413645-faizul-9",
+        id: "2418793-s1",
         name: "Keropok Lekor",
         description: "Traditional fried fish crackers.",
         price: 0.5,
@@ -226,7 +226,7 @@ const vendors = [
         available: true,
       },
       {
-        id: "2413645-faizul-10",
+        id: "2418793-s2",
         name: "Pisang Goreng Cheese",
         description: "Crispy fried bananas topped with cheese.",
         price: 5.0,
@@ -234,7 +234,7 @@ const vendors = [
         available: true,
       },
       {
-        id: "2413645-faizul-11",
+        id: "2418793-s3",
         name: "Dubai Chewy Cookies",
         description: "Rich chocolate cookies with a chewy centre.",
         price: 15.0,
@@ -242,7 +242,7 @@ const vendors = [
         available: true,
       },
       {
-        id: "2413645-faizul-12",
+        id: "2418793-s4",
         name: "Vietnamese Spring Roll",
         description: "Spring rolls filled with fresh vegetables.",
         price: 15.0,
@@ -250,7 +250,7 @@ const vendors = [
         available: true,
       },
       {
-        id: "2413645-faizul-13",
+        id: "2418793-s5",
         name: "Aiskrim Malaysia",
         description: "Traditional frozen flavoured ice pops.",
         price: 0.2,
@@ -258,7 +258,7 @@ const vendors = [
         available: true,
       },
       {
-        id: "2413645-faizul-14",
+        id: "2418793-s6",
         name: "Aiskrim Goreng",
         description: "Crispy fried ice cream dessert.",
         price: 1.0,
@@ -266,7 +266,7 @@ const vendors = [
         available: true,
       },
       {
-        id: "2413645-faizul-15",
+        id: "2418793-s7",
         name: "Shawarma",
         description: "Wrap filled with meat and vegetables.",
         price: 7.0,
@@ -274,7 +274,7 @@ const vendors = [
         available: true,
       },
       {
-        id: "2413645-faizul-16",
+        id: "2418793-s8",
         name: "Waffle",
         description: "Golden waffle with a soft centre.",
         price: 5.0,
@@ -282,7 +282,7 @@ const vendors = [
         available: true,
       },
       {
-        id: "2413645-faizul-17",
+        id: "2418793-d1",
         name: "Teh Hijau",
         description: "Refreshing green tea.",
         price: 3.0,
@@ -290,7 +290,7 @@ const vendors = [
         available: true,
       },
       {
-        id: "2413645-faizul-18",
+        id: "2418793-d2",
         name: "Teh Bunga",
         description: "Light and fragrant floral tea.",
         price: 2.5,
@@ -298,7 +298,7 @@ const vendors = [
         available: true,
       },
       {
-        id: "2413645-faizul-19",
+        id: "2418793-d3",
         name: "Teh Tarik",
         description: "Classic Malaysian pulled milk tea.",
         price: 2.5,
@@ -306,7 +306,7 @@ const vendors = [
         available: true,
       },
       {
-        id: "2413645-faizul-20",
+        id: "2418793-d4",
         name: "Teh O Ais",
         description: "Chilled black tea with ice.",
         price: 1.8,
@@ -314,7 +314,7 @@ const vendors = [
         available: true,
       },
       {
-        id: "2413645-faizul-21",
+        id: "2418793-d5",
         name: "Matcha Strawberry",
         description: "Matcha blended with sweet strawberry.",
         price: 7.0,
@@ -322,7 +322,7 @@ const vendors = [
         available: true,
       },
       {
-        id: "2413645-faizul-22",
+        id: "2418793-d6",
         name: "Keladi Latte",
         description: "Creamy latte with taro flavour.",
         price: 6.5,
@@ -330,7 +330,7 @@ const vendors = [
         available: true,
       },
       {
-        id: "2413645-faizul-23",
+        id: "2418793-d7",
         name: "Spanish Latte",
         description: "Rich espresso with creamy milk.",
         price: 7.0,
@@ -338,7 +338,7 @@ const vendors = [
         available: true,
       },
       {
-        id: "2413645-faizul-24",
+        id: "2418793-d8",
         name: "Americano",
         description: "Bold espresso with hot water.",
         price: 5.0,
