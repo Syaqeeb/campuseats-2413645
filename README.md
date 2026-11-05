@@ -1,3 +1,21 @@
+# CampusEats - M1 React Milestone
+
+- Name: Ahmad Syaqeeb Bin Suhaimi
+- Matric Number: 2413645
+- Section: Section 01
+- Repository URL: https://github.com/Syaqeeb/campuseats-2413645
+
+## Shop Details
+
+- My Shop: Pinggan Panas (Mahallah Ali, Block C)
+
+## Copied Vendor Credits
+
+In accordance with the project guidelines, vendor data for additional shops has been integrated from classmates:
+
+- Vendor 2 (Kedai Makan Pantai Timur): Copied from [Classmate's Matric Number, e.g., 2410589]
+- Vendor 3 (Faizul Cafe): Copied from [Classmate's Matric Number, e.g., 2418793]
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
