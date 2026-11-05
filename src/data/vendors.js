@@ -1,13 +1,21 @@
+// src/data/vendors.js
+
+/**
+ * Mock Data: vendors
+ * Purpose: Stores an array of campus vendor objects, including their location,
+ * operating hours, active status, and detailed nested menu items with pricing.
+ */
+
 const vendors = [
   {
-    id: "2413645-ali",
-    name: "Kafe Mahallah Ali",
+    id: "2413645-pinggan-panas",
+    name: "Pinggan Panas",
     location: "Mahallah Ali, Block C",
     openHours: "7:00 am - 10:00 pm",
     isOpen: true,
     menu: [
       {
-        id: "2413645-ali-1",
+        id: "2413645-pp-1",
         name: "Nasi Lemak Ayam",
         description: "Coconut rice, fried chicken, sambal, egg",
         price: 7.5,
@@ -15,7 +23,7 @@ const vendors = [
         available: true,
       },
       {
-        id: "2413645-ali-2",
+        id: "2413645-pp-2",
         name: "Nasi Goreng Kampung",
         description: "Fried rice with anchovies and water spinach",
         price: 6.5,
@@ -23,7 +31,7 @@ const vendors = [
         available: true,
       },
       {
-        id: "2413645-ali-3",
+        id: "2413645-pp-3",
         name: "Mee Goreng Mamak",
         description: "Stir-fried yellow noodles with tofu and sprouts",
         price: 5.5,
@@ -31,7 +39,7 @@ const vendors = [
         available: true,
       },
       {
-        id: "2413645-ali-4",
+        id: "2413645-pp-4",
         name: "Maggi Goreng Double",
         description: "Double fried instant noodles with egg",
         price: 6.0,
@@ -39,7 +47,7 @@ const vendors = [
         available: true,
       },
       {
-        id: "2413645-ali-5",
+        id: "2413645-pp-5",
         name: "Teh Tarik",
         description: "Traditional pulled milk tea",
         price: 2.5,
@@ -47,7 +55,7 @@ const vendors = [
         available: true,
       },
       {
-        id: "2413645-ali-6",
+        id: "2413645-pp-6",
         name: "Milo Ais",
         description: "Iced chocolate malt drink",
         price: 3.0,
@@ -55,7 +63,7 @@ const vendors = [
         available: true,
       },
       {
-        id: "2413645-ali-7",
+        id: "2413645-pp-7",
         name: "Roti Canai",
         description: "Flaky flatbread served with curry and dahl",
         price: 1.5,
@@ -63,45 +71,12 @@ const vendors = [
         available: true,
       },
       {
-        id: "2413645-ali-8",
+        id: "2413645-pp-8",
         name: "Roti Telur",
         description: "Flatbread stuffed with egg",
         price: 2.5,
         category: "Bread",
         available: false,
-      },
-    ],
-  },
-  {
-    id: "2413645-aminah",
-    name: "Kafe Mahallah Aminah",
-    location: "Mahallah Aminah, Ground Floor",
-    openHours: "8:00 am - 9:00 pm",
-    isOpen: true,
-    menu: [
-      {
-        id: "2413645-aminah-1",
-        name: "Nasi Ayam Penyet",
-        description: "Smashed fried chicken with sambal and rice",
-        price: 9.0,
-        category: "Rice",
-        available: true,
-      },
-      {
-        id: "2413645-aminah-2",
-        name: "Laksa Johor",
-        description: "Spaghetti in spicy fish gravy with herbs",
-        price: 8.0,
-        category: "Noodles",
-        available: true,
-      },
-      {
-        id: "2413645-aminah-3",
-        name: "Air Bandung",
-        description: "Rose syrup with condensed milk",
-        price: 3.0,
-        category: "Drinks",
-        available: true,
       },
     ],
   },
@@ -346,14 +321,6 @@ const vendors = [
         available: true,
       },
     ],
-  },
-  {
-    id: "2413645-faruq",
-    name: "Kafe Mahallah Faruq",
-    location: "Mahallah Faruq, Block B",
-    openHours: "6:00 pm - 1:00 am",
-    isOpen: false,
-    menu: [],
   },
 ];
 

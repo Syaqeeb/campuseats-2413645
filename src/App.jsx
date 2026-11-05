@@ -1,57 +1,47 @@
-import { useState } from "react";
-import vendors from "./data/vendors";
-import Header from "./components/Header";
-import VendorCard from "./components/VendorCard";
-import MenuList from "./components/MenuList";
-import SpecialBanner from "./components/SpecialBanner";
-import Footer from "./components/Footer";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { CartProvider } from "./context/CartProvider.jsx";
+import "./App.css";
 
-function App() {
-  const [selectedVendorId, setSelectedVendorId] = useState(vendors[0].id);
-  const [cart, setCart] = useState([]);
+// Import all layout templates and page components
+import { Layout } from "./pages/Layout.jsx";
+import { HomePage } from "./pages/HomePage.jsx";
+import { VendorPage } from "./pages/VendorPage.jsx";
+import { CartPage } from "./pages/CartPage.jsx";
+import { OrdersPage } from "./pages/OrdersPage.jsx";
+import { NotFoundPage } from "./pages/NotFoundPage.jsx";
 
-  const selectedVendor = vendors.find((v) => v.id === selectedVendorId);
-
-  const handleAddToCart = (item) => {
-    setCart((prevCart) => [...prevCart, item]);
-  };
-
+/**
+ * Component: App
+ * Purpose: Root application component. Configures client-side routing,
+ * wraps the app with global state providers, and sets up path mappings.
+ */
+export default function App() {
   return (
-    <>
-      <Header cartCount={cart.length} />
-      <main className="container">
-        <section>
-          <h2>Choose a vendor</h2>
-          <div className="grid">
-            {vendors.map((vendor) => (
-              <VendorCard
-                key={vendor.id}
-                vendor={vendor}
-                isSelected={vendor.id === selectedVendorId}
-                onSelect={setSelectedVendorId}
-              />
-            ))}
-          </div>
-        </section>
+    // 1. BrowserRouter enables client-side URL routing using HTML5 history API
+    <BrowserRouter>
+      {/* 2. CartProvider wraps the app to supply global cart state & persistence */}
+      <CartProvider>
+        <Routes>
+          {/* 3. Parent Layout Route: Renders persistent header, footer, and <Outlet /> */}
+          <Route element={<Layout />}>
+            {/* Index route renders at the root URL ("/") */}
+            <Route index element={<HomePage />} />
 
-        <section style={{ marginTop: "30px" }}>
-          <h2>Menu: {selectedVendor ? selectedVendor.name : ""}</h2>
-          {selectedVendor && (
-            <SpecialBanner
-              specialItem={selectedVendor.menu.find(
-                (item) => item.price < 5 && item.available,
-              )}
-            />
-          )}
-          <MenuList
-            items={selectedVendor ? selectedVendor.menu : []}
-            onAdd={handleAddToCart}
-          />
-        </section>
-      </main>
-      <Footer />
-    </>
+            {/* Dynamic route with parameter `:id` for individual vendors */}
+            <Route path="vendor/:id" element={<VendorPage />} />
+
+            {/* Cart checkout page route */}
+            <Route path="cart" element={<CartPage />} />
+
+            {/* Order history tracking page route */}
+            <Route path="orders" element={<OrdersPage />} />
+
+            {/* 4. Catch-all wildcard route for handling 404 Not Found errors */}
+            <Route path="*" element={<NotFoundPage />} />
+          </Route>
+        </Routes>
+      </CartProvider>
+    </BrowserRouter>
   );
 }
-
-export default App;
